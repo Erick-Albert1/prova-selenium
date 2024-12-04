@@ -1,0 +1,60 @@
+{
+  "id": "8662d46d-d990-4246-b1ff-0bec07ddc380",
+  "version": "2.0",
+  "name": "provaSelenium",
+  "url": "https://example.com.",
+  "tests": [{
+    "id": "b4e3db4c-18ce-41aa-b905-c4c9affef7ca",
+    "name": "provaSelenium",
+    "commands": [{
+      "id": "8d37cc6d-797a-442d-9e56-cb1c1f161097",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16cedac2-0100-438e-9d49-971e55b887c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "994x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b146277-e705-402c-b7e4-cac26a2c1ccd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=More information...",
+      "targets": [
+        ["linkText=More information...", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'More information...')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.iana.org/domains/example')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'More information...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62e61243-d3ca-4246-b8f0-bc91f1774a2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(5) font > font",
+      "targets": [
+        ["css=ul:nth-child(5) font > font", "css:finder"],
+        ["xpath=//div[@id='body']/article/main/div/ul/li/a/font/font", "xpath:idRelative"],
+        ["xpath=//main/div/ul/li/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5c5a98b3-c1b0-4c95-855e-41b95b6d27a2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b4e3db4c-18ce-41aa-b905-c4c9affef7ca"]
+  }],
+  "urls": ["https://example.com./"],
+  "plugins": []
+}
